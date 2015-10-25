@@ -1,0 +1,5 @@
+flags: {}
+resolver: lts-3.8
+packages:
+- '.'
+extra-deps: []

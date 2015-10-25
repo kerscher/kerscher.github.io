@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+body {
+    color: black;
+    
+    font-size:   1.4em;
+    font-family: "EB Garamond", serif;
+    line-height: 1.5em;
+
+    margin: 0 auto 0 auto;
+    width:  27em;
+}
+
+code {
+    font-size:   1em;
+    font-family: 'Cutive Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color:           #aa2222;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3 { font-weight: normal; }
+h1 { font-size: 1.44em; margin-top: 1.2em; }
+h2 { font-size: 1.33em; }
+h3 { font-size: 1.11em; }
+
+div.info {
+    font-size: 0.8em;
+}
+
+div#navigation {
+    margin: 1.2em 0 0 0;
+}
+
+div#navigation a {
+    font-size: 1.1em;
+}
+
+div#footer {
+    padding: 1em 0 1em 0;
+    color:     #444;
+    font-size: 0.6em;
+    padding:   0.5em 0 0.5em 0;
+}
