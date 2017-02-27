@@ -1,8 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext);
-@font-face {
-    font-family: Iosevka;
-    src: url('iosevka-light.ttc') format('truetype');
-}
 
 body {
     color: black;
@@ -35,7 +31,7 @@ footer {
 
 code {
     font-size:   0.9em;
-    font-family: Iosevka, monospace;
+    font-family: monospace;
     line-height: 0.5rem;
 }
 .sourceCode { margin: 1.5em 0 1.5em 0; }
@@ -51,10 +47,6 @@ a {
 
 li { list-style-type: none; }
 
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode pre
-   { margin: 0; padding: 0; border: 0; vertical-align: baseline; border: none; }
-td.lineNumbers { border-right: 0; text-align: right; color: #AAAAAA; padding-right: 1em; padding-left: 1em; }
-td.sourceCode { padding-left: 1em; }
 .sourceCode span.kw { color: #0040aa; }
 .sourceCode span.dt { color: #901040; }
 .sourceCode span.dv { color: #40a070; }
@@ -64,7 +56,7 @@ td.sourceCode { padding-left: 1em; }
 .sourceCode span.st { color: #4070a0; }
 .sourceCode span.co { color: #60a0b0; }
 .sourceCode span.ot { color: #0040aa; }
-.sourceCode span.al { color: red;  }
+.sourceCode span.al { color: red;     }
 .sourceCode span.fu { color: #06287e; }
-.sourceCode span.re { }
-.sourceCode span.er { color: red;  }
+.sourceCode span.re {                 }
+.sourceCode span.er { color: red;     }
