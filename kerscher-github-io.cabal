@@ -3,7 +3,7 @@ version:            0.1.0.0
 synopsis:           Github Pages for Yghor Kerscher
 homepage:           http://kerscher.github.io
 license:            BSD3
-license-file:       LICENCE
+license-file:       LICENCE.md
 author:             Yghor Kerscher
 maintainer:         kerscher@acm.org
 copyright:          © 2017 Yghor Kerscher
