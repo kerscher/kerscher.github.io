@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>$title$</title>
-        <link rel="stylesheet"
-              type="text/css"
-              href="/style/style.css">
-    </head>
-    <body>
-        <div id="content">
-            <h1>$title$</h1>
-            $body$
-        </div>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/style/style.css">
+<title>$title$</title>
 
-        <div id="footer">
-            Written by <a href="https://github.com/kerscher">Yghor Kerscher</a>
-            using      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
-        </div>
-    </body>
-</html>
+$if(landingPage)$
+<header>
+  <h1>Yghor Kerscher</h1>
+  <p>
+    is an Industrial Design researcher working on <a href="http://dapp.fgv.br">public policy analysis, development operations</a> and interaction evaluation models.
+  </p>
+</header>
+$endif$
+
+$if(landingPage)$
+<nav>
+  $body$
+</nav>
+$else$
+<article>
+  <h1>$title$</h1>
+  $body$
+</article>
+$endif$
+
+<footer>
+  Written by <a href="https://github.com/kerscher">Yghor Kerscher</a>
+  using      <a href="http://jaspervdj.be/hakyll">Hakyll</a>.<br>
+   <a href="https://github.com/kerscher/kerscher.github.io">Source code for this website</a> is available on an <a>open-source licence</a>.
+</footer>

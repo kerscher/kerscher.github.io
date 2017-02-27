@@ -11,13 +11,15 @@ main = hakyllWith configuration rules
 
 rules :: Rules ()
 rules = do
+    match "templates/*" $ compile templateCompiler
+  
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
 
     match "style/*" $ do
         route   idRoute
-        compile compressCssCompiler
+        compile copyFileCompiler
 
     match "posts/*" $ do
         route $ setExtension "html"
@@ -29,18 +31,16 @@ rules = do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let indexContext =
-                    listField  "posts" postCtx (return posts) `mappend`
-                    constField "title" "Yghor Kerscher"       `mappend`
-                    defaultContext
-
-            getResourceBody
-                >>= applyAsTemplate indexContext
-                >>= loadAndApplyTemplate "templates/home.html" indexContext
-                >>= relativizeUrls
-
-    match "templates/*" $ compile templateCompiler
+          posts <- recentFirst =<< loadAll "posts/*"
+          let indexContext =
+                listField  "posts" postCtx (return posts) `mappend`
+                constField "title" "Yghor Kerscher"       `mappend`
+                constField "landingPage" mempty           `mappend`
+                defaultContext           
+          getResourceBody
+            >>= applyAsTemplate indexContext
+            >>= loadAndApplyTemplate "templates/default.html" indexContext
+            >>= relativizeUrls
 
 postCtx :: Context String
 postCtx =
