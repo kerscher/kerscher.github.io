@@ -3,7 +3,7 @@
 
 [![BSD3 license](https://img.shields.io/badge/licence-BSD%203--clause-blue.svg)](https://github.com/kerscher/kerscher.github.io/blob/source/LICENCE.md)
 
-This is a [Hakyll](https://jaspervdj.be/hakyll) blog, and can be deployed on Github Pages as per instructions [here](https://jaspervdj.be/hakyll/tutorials/github-pages-tutorial.html), or by executing locally:
+There is not much content at the moment, but foundations for writing are in place. This is a [Hakyll](https://jaspervdj.be/hakyll) blog, and can be deployed on Github Pages as per instructions [here](https://jaspervdj.be/hakyll/tutorials/github-pages-tutorial.html), or by executing locally:
 
 ```shell
 git stash
