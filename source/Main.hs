@@ -3,9 +3,13 @@ import Hakyll
 
 configuration :: Configuration
 configuration =
-    defaultConfiguration
-        { providerDirectory = "source" }
-
+  defaultConfiguration
+  { providerDirectory    = "source"
+  , destinationDirectory = "docs"
+  , storeDirectory       = "cache"
+  , tmpDirectory         = "cache/tmp"
+  }
+  
 main :: IO ()
 main = hakyllWith configuration rules
 
