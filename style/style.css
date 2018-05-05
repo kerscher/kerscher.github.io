@@ -1,20 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext);
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 
 body {
-    color: black;
+    color: #000;
     background-color: #efefff;
     
-    font-size:   1.4em;
+    font-size:   1.3em;
     font-family: "EB Garamond", serif;
-    line-height: 2rem;
+    line-height: 1.77rem;
 
     margin: 0 0 0 1.4em;
     max-width:  30em;
 }
 
 h1, h2, h3 { font-weight: normal; }
-h1 { font-size: 1.44em; margin-top: 1.2em; }
-h2 { font-size: 1.33em; }
+h1 { font-size: 1.66em; margin-top: 1em; margin-bottom: 1.66em; }
+h2 { font-size: 1.33em; margin-top: 2.33em; }
 h3 { font-size: 1.11em; }
 
 nav {
@@ -29,34 +30,19 @@ footer {
     color:     #444;
 }
 
-code {
-    font-size:   0.9em;
-    font-family: monospace;
-    line-height: 0.5rem;
-}
-.sourceCode { margin: 1.5em 0 1.5em 0; }
+pre { margin: 0.66em 0 0 2em; }
 
-time {
-    font-size: 0.8em;
+code {
+    display: inline-block;
+    font-size:   0.65em;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 1.2rem;
 }
+time { font-size: 0.8em; }
 
 a {
     text-decoration: none;
     color:           #2222aa;
 }
 
-li { list-style-type: none; }
-
-.sourceCode span.kw { color: #0040aa; }
-.sourceCode span.dt { color: #901040; }
-.sourceCode span.dv { color: #40a070; }
-.sourceCode span.bn { color: #40a070; }
-.sourceCode span.fl { color: #40a070; }
-.sourceCode span.ch { color: #4070a0; }
-.sourceCode span.st { color: #4070a0; }
-.sourceCode span.co { color: #60a0b0; }
-.sourceCode span.ot { color: #0040aa; }
-.sourceCode span.al { color: red;     }
-.sourceCode span.fu { color: #06287e; }
-.sourceCode span.re {                 }
-.sourceCode span.er { color: red;     }
+li { list-style-type: "— "; }
