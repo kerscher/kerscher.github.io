@@ -18,13 +18,13 @@ stack exec kerscher-github-io -- clean
 stack exec kerscher-github-io -- build
 git fetch --all
 git checkout -b master --track github/master
-rsync --archive --filter='P docs/'         \
-                --filter='P cache/'        \
-                --filter='P .git/'         \
-                --filter='P .gitignore'    \
-                --filter='P .stack-work'   \
-                --filter='P dist-newsyle/' \
-                --delete-excluded          \
+rsync --archive --filter='P docs/'          \
+                --filter='P cache/'         \
+                --filter='P .git/'          \
+                --filter='P .gitignore'     \
+                --filter='P .stack-work'    \
+                --filter='P dist-newstyle/' \
+                --delete-excluded           \
                 docs/ .
 git add --all
 git commit -m "Publish."
