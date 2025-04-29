@@ -1,6 +1,10 @@
 `kerscher.github.io`
 ====================
 
+**WARNING! This branch is _highly outdated_ and probably only builds on x86 systems.**
+**It hasn't been updated in years. Use the `main` branch instead.**
+**This is for historical context only.** 
+
 [![BSD3 license](https://img.shields.io/badge/licence-BSD%203--clause-blue.svg)](https://github.com/kerscher/kerscher.github.io/blob/source/LICENCE.md)
 
 There is not much content at the moment, but foundations for writing are in place.
